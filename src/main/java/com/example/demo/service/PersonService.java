@@ -17,7 +17,7 @@ public class PersonService {
 
     //This is how you let people know it is a constructor
     @Autowired
-    public PersonService(@Qualifier("fakeDao") PersonDao personDao) {
+    public PersonService(@Qualifier("postgres") PersonDao personDao) {
         this.personDao = personDao;
     }
 
