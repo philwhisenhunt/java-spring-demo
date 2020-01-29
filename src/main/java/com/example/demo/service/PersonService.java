@@ -38,7 +38,8 @@ public class PersonService {
     public int deletePerson(UUID id) {
         return personDao.deletePersonById(id);
     }
-}
+
     public int updatePerson(UUID id, Person newPerson) {
         return PersonDao.updatePersonById(id, newPerson);
     }
+}
